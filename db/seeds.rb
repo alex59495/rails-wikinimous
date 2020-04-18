@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+(0 .. 10).each do |x|
+    title = Faker::Name.first_name
+    content = Faker::Name.name
+    article = Article.create(title: title, content: content)
+end
