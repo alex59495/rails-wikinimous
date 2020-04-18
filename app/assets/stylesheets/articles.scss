@@ -1,3 +1,45 @@
 // Place all the styles related to the Articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.navbar h1 {
+    font-size: 20px;
+    color: rgb(107, 108, 114);
+    font-weight: 400;
+}
+
+.navbar {
+    border-bottom: solid 0.4px rgb(200, 200, 200);
+    background-color: rgba(220, 220, 220, 0.2);
+    margin-bottom: 20px;
+}
+
+.navbar a {
+    color: rgb(107, 108, 114);
+}
+
+.navbar a:hover {
+    color: rgb(90, 91, 95);
+    text-decoration: none;
+}
+
+
+.article a {
+    color: rgb(51, 118, 177);
+}
+
+.article p {
+    color: rgb(107, 108, 114);
+}
+
+.article a:hover {
+    color: #23527C;
+}
+
+.title-article {
+    border-bottom: solid 0.4px rgb(200, 200, 200);;
+}
+
+.form-label {
+    font-weight: bold;
+}

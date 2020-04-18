@@ -1,6 +1,22 @@
-<h1><%= @article.title %></h1>
-<p><%= @article.content %></p>
-<br><br>
-<%= link_to "Delete the article", article_path(@article), method: :delete, data: { confirm: "Are you sure?"} %>
-<br><br>
-<%= link_to "Back", articles_path %>
+<div class="navbar">
+    <h1>Wikinimous</h1>
+    <%= link_to "New article", new_article_path %>
+</div>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-sm-8">
+        <div class="title-article">
+            <h1><%= @article.title %></h1>
+        </div>
+            <p><%= @article.content %></p>
+            <br><br>
+            <%= link_to "Edit the article", edit_article_path(@article) %>
+            <br><br>
+            <%= link_to "Delete the article", article_path(@article), method: :delete, data: { confirm: "Are you sure?"} %>
+            <br><br>
+            <%= link_to "Back", articles_path %>
+        </div>
+    </div>
+</div>
+
